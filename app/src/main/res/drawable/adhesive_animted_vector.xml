@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/path_selected">
+    <target
+        android:animation="@animator/anim_path_1"
+        android:name="rect_11_path"
+        />
+    <target
+        android:animation="@animator/anim_path_2"
+        android:name="rect_12_path"
+        />
+    <target
+        android:animation="@animator/anim_bubble_path"
+        android:name="rect_13_path"
+        />
+    <target
+        android:animation="@animator/anim_bubble_group"
+        android:name="rect_13"
+        />
+</animated-vector>

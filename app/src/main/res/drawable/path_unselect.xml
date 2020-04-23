@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <group android:name="house">
+        <path
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:pathData="M60,85 L20,85 20,50 A5,5 -1 0,1 13,48 L42,15 Q50,6 58,15 L87,48 L87,48 L87,48 A5,5 -1 0,1 80,50 L80,85 70,85"
+            android:strokeWidth="6"
+            android:strokeColor="#B1BAC1" />
+        <path
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:pathData="M38 60 Q50,72 63,60 "
+            android:strokeWidth="6"
+            android:strokeColor="#B1BAC1" />
+    </group>
+</vector>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <group android:name="house">
+
+        <group android:name="rect_11">
+            <path
+                android:name="rect_11_path"
+                android:pathData="M60,85 L20,85 20,50 A5,5 -1 0,1 13,48 L42,15 Q50,6 58,15 L87,48 L87,48 L87,48 A5,5 -1 0,1 80,50 L80,85 70,85"
+                android:strokeWidth="6"
+                android:strokeColor="#5198F4"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round" />
+        </group>
+        <group android:name="rect_12">
+            <path
+                android:name="rect_12_path"
+                android:pathData="M38 60 Q50,72 63,60 "
+                android:strokeWidth="6"
+                android:strokeColor="#5198F4"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round" />
+        </group>
+        <group android:name="rect_13" >
+            <path
+                android:name="rect_13_path"
+                android:fillColor="#aaBDDCFA"
+                android:pathData="M68,73m-15,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round" />
+        </group>
+    </group>
+</vector>
+
