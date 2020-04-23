@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <!-- vector-->
+    <aapt:attr name="android:drawable">
+        <vector
+            android:width="100dp"
+            android:height="100dp"
+            android:viewportWidth="100"
+            android:viewportHeight="100">
+            <group android:name="house">
+                <group android:name="rect_11">
+                    <path
+                        android:name="rect_11_path"
+                        android:pathData="M60,85 L20,85 20,50 A5,5 -1 0,1 13,48 L42,15 Q50,6 58,15 L87,48 L87,48 L87,48 A5,5 -1 0,1 80,50 L80,85 70,85"
+                        android:strokeWidth="6"
+                        android:strokeColor="#5198F4"
+                        android:strokeLineCap="round"
+                        android:strokeLineJoin="round" />
+                </group>
+                <group android:name="rect_12">
+                    <path
+                        android:name="rect_12_path"
+                        android:pathData="M38 60 Q50,72 63,60 "
+                        android:strokeWidth="6"
+                        android:strokeColor="#5198F4"
+                        android:strokeLineCap="round"
+                        android:strokeLineJoin="round" />
+                </group>
+                <group android:name="rect_13">
+                    <path
+                        android:name="rect_13_path"
+                        android:fillColor="#aaBDDCFA"
+                        android:pathData="M68,73m-15,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0"
+                        android:strokeLineCap="round"
+                        android:strokeLineJoin="round" />
+                </group>
+            </group>
+        </vector>
+    </aapt:attr>
+
+    <!-- 配上动画-->
+    <target android:name="rect_11_path">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="400"
+                android:interpolator="@android:interpolator/accelerate_decelerate"
+                android:propertyName="trimPathEnd"
+                android:valueFrom="0"
+                android:valueTo="1"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+    <target android:name="rect_12_path">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="100"
+                android:interpolator="@android:interpolator/linear"
+                android:propertyName="trimPathEnd"
+                android:startOffset="200"
+                android:valueFrom="0"
+                android:valueTo="1"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+    <target android:name="rect_13_path">
+        <aapt:attr name="android:animation">
+            <set android:ordering="sequentially">
+                <objectAnimator
+                    android:duration="1"
+                    android:propertyName="fillAlpha"
+                    android:valueFrom="1"
+                    android:valueTo="0"
+                    android:valueType="floatType" />
+                <objectAnimator
+                    android:duration="1"
+                    android:propertyName="fillAlpha"
+                    android:startOffset="250"
+                    android:valueFrom="0"
+                    android:valueTo="1"
+                    android:valueType="floatType" />
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="rect_13">
+        <aapt:attr name="android:animation">
+            <set>
+                <set android:ordering="sequentially">
+                    <objectAnimator
+                        android:duration="200"
+                        android:propertyName="translateY"
+                        android:startOffset="400"
+                        android:valueFrom="0"
+                        android:valueTo="-20"
+                        android:valueType="floatType" />
+                    <objectAnimator
+                        android:duration="200"
+                        android:propertyName="translateX"
+                        android:valueFrom="-18"
+                        android:valueTo="0"
+                        android:valueType="floatType" />
+                </set>
+                <set android:ordering="sequentially">
+                    <objectAnimator
+                        android:duration="200"
+                        android:propertyName="translateX"
+                        android:startOffset="400"
+                        android:valueFrom="0"
+                        android:valueTo="-18"
+                        android:valueType="floatType" />
+                    <objectAnimator
+                        android:duration="200"
+                        android:propertyName="translateY"
+                        android:valueFrom="-20"
+                        android:valueTo="0"
+                        android:valueType="floatType" />
+                </set>
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>

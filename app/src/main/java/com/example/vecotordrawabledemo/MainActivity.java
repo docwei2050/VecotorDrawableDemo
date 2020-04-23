@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         mImageView3 = (ImageView) findViewById(R.id.imageView3);
         mImageView4 = (ImageView) findViewById(R.id.imageView4);
         AnimatedVectorDrawableCompat animatedVectorDrawableCompat1 = AnimatedVectorDrawableCompat.create(
-                this, R.drawable.adhesive_animted_vector);
+                this, R.drawable.animted_vector);
         AnimatedVectorDrawableCompat animatedVectorDrawableCompat2 = AnimatedVectorDrawableCompat.create(
                 this, R.drawable.path2_anim);
         AnimatedVectorDrawableCompat animatedVectorDrawableCompat3 = AnimatedVectorDrawableCompat.create(
