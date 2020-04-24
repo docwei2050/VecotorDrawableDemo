@@ -49,7 +49,7 @@
         </vector>
     </aapt:attr>
 
-    <!-- 配上动画animator-->
+    <!-- 动画animator-->
     <target android:name="rect_11_path">
         <aapt:attr name="android:animation">
             <objectAnimator
@@ -78,7 +78,7 @@
             <objectAnimator
                 android:duration="1"
                 android:propertyName="fillAlpha"
-                android:startOffset="250"
+                android:startOffset="400"
                 android:valueFrom="0"
                 android:valueTo="1"
                 android:valueType="floatType" />

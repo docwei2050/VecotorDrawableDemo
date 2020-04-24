@@ -10,7 +10,7 @@
             <group android:name="application">
                 <path
                     android:name="rect_11_path"
-                    android:pathData="M25,15 L23,15 Q16,16 15,23 L15,77 Q16,86 23,85 L38,85 Q45,84 46,77 L46,70"
+                    android:pathData="M46,70 L46,77 Q45,84 38,85 L23,85 Q16,86 15,77 L15,23 Q16,16 23,15 L25,15"
                     android:strokeWidth="7"
                     android:strokeAlpha="0"
                     android:strokeColor="#46C021"
@@ -18,7 +18,7 @@
                     android:strokeLineJoin="round" />
                 <path
                     android:name="rect_12_path"
-                    android:pathData="M46,70 L46,23 Q45,16 38,15 L25,15"
+                    android:pathData="M25,15 L38,15 Q45,16 46,23 L46,70"
                     android:strokeWidth="7"
                     android:strokeAlpha="0"
                     android:strokeColor="#46C021"
@@ -37,7 +37,7 @@
                     <path
                         android:name="bubble"
                         android:fillAlpha="0"
-                        android:pathData="M78,73m-15,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0">
+                        android:pathData="M80,75m-15,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0">
                         <aapt:attr name="android:fillColor">
                             <gradient
                                 android:centerX="62"
@@ -61,51 +61,88 @@
         </vector>
     </aapt:attr>
 
+ <!--   动画-->
     <target android:name="rect_11_path">
         <aapt:attr name="android:animation">
-            <objectAnimator
-                android:duration="125"
-                android:propertyName="strokeAlpha"
-                android:valueFrom="0"
-                android:valueTo="1"
-                android:valueType="floatType" />
+            <set android:ordering="sequentially">
+                <objectAnimator
+                    android:duration="1"
+                    android:propertyName="strokeAlpha"
+                    android:valueFrom="0"
+                    android:valueTo="1"
+                    android:valueType="floatType" />
+                <objectAnimator
+                    android:duration="500"
+                    android:interpolator="@android:interpolator/accelerate_decelerate"
+                    android:propertyName="trimPathEnd"
+                    android:valueFrom="0"
+                    android:valueTo="1"
+                    android:valueType="floatType" />
+            </set>
         </aapt:attr>
     </target>
     <target android:name="rect_12_path">
         <aapt:attr name="android:animation">
-            <objectAnimator
-                android:duration="125"
-                android:propertyName="strokeAlpha"
-                android:startOffset="125"
-                android:valueFrom="0"
-                android:valueTo="1"
-                android:valueType="floatType" />
+            <set android:ordering="sequentially">
+                <objectAnimator
+                    android:duration="1"
+                    android:propertyName="strokeAlpha"
+                    android:valueFrom="0"
+                    android:valueTo="1"
+                    android:valueType="floatType" />
+                <objectAnimator
+                    android:duration="125"
+                    android:startOffset="125"
+                    android:interpolator="@android:interpolator/accelerate_decelerate"
+                    android:propertyName="trimPathEnd"
+                    android:valueFrom="0"
+                    android:valueTo="1"
+                    android:valueType="floatType" />
+            </set>
         </aapt:attr>
     </target>
     <target android:name="rect_13_path">
         <aapt:attr name="android:animation">
-            <objectAnimator
-                android:duration="250"
-                android:propertyName="strokeAlpha"
-                android:startOffset="125"
-                android:valueFrom="0"
-                android:valueTo="1"
-                android:valueType="floatType" />
+            <set android:ordering="sequentially">
+                <objectAnimator
+                    android:duration="1"
+                    android:propertyName="strokeAlpha"
+                    android:valueFrom="0"
+                    android:valueTo="1"
+                    android:valueType="floatType" />
+                <objectAnimator
+                    android:duration="125"
+                    android:startOffset="250"
+                    android:interpolator="@android:interpolator/accelerate_decelerate"
+                    android:propertyName="trimPathEnd"
+                    android:valueFrom="0"
+                    android:valueTo="1"
+                    android:valueType="floatType" />
+            </set>
         </aapt:attr>
     </target>
     <target android:name="rect_14_path">
         <aapt:attr name="android:animation">
-            <objectAnimator
-                android:duration="125"
-                android:propertyName="strokeAlpha"
-                android:startOffset="375"
-                android:valueFrom="0"
-                android:valueTo="1"
-                android:valueType="floatType" />
+            <set android:ordering="sequentially">
+                <objectAnimator
+                    android:duration="1"
+                    android:propertyName="strokeAlpha"
+                    android:valueFrom="0"
+                    android:valueTo="1"
+                    android:valueType="floatType" />
+                <objectAnimator
+                    android:duration="125"
+                    android:startOffset="500"
+                    android:interpolator="@android:interpolator/accelerate_decelerate"
+                    android:propertyName="trimPathEnd"
+                    android:valueFrom="0"
+                    android:valueTo="1"
+                    android:valueType="floatType" />
+            </set>
         </aapt:attr>
     </target>
 
-
+ <!-- 小球的动画-->
     <target android:name="bubble">
         <aapt:attr name="android:animation">
             <set android:ordering="sequentially">
@@ -126,14 +163,14 @@
                     <objectAnimator
                         android:duration="250"
                         android:propertyName="translateY"
-                        android:startOffset="400"
+                        android:startOffset="500"
                         android:valueFrom="0"
-                        android:valueTo="-10"
+                        android:valueTo="-20"
                         android:valueType="floatType" />
                     <objectAnimator
                         android:duration="250"
                         android:propertyName="translateX"
-                        android:valueFrom="-10"
+                        android:valueFrom="-20"
                         android:valueTo="0"
                         android:valueType="floatType" />
                 </set>
@@ -141,14 +178,14 @@
                     <objectAnimator
                         android:duration="250"
                         android:propertyName="translateX"
-                        android:startOffset="400"
+                        android:startOffset="500"
                         android:valueFrom="0"
-                        android:valueTo="-10"
+                        android:valueTo="-20"
                         android:valueType="floatType" />
                     <objectAnimator
                         android:duration="250"
                         android:propertyName="translateY"
-                        android:valueFrom="-10"
+                        android:valueFrom="-20"
                         android:valueTo="0"
                         android:valueType="floatType" />
                 </set>
