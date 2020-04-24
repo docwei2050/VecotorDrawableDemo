@@ -9,16 +9,22 @@
     <group android:name="house">
         <group android:name="rect_13">
         </group>
+      <!--  <path
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:pathData="M0 0 100,0 100,100 0,100 z "
+            android:strokeWidth="8"
+            android:strokeColor="#AEBBC2" />-->
         <path
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
-            android:pathData="M60,85 L20,85 20,50 A5,5 -1 0,1 13,48 L42,15 Q50,6 58,15 L87,48 L87,48 L87,48 A5,5 -1 0,1 80,50 L80,85 70,85"
+            android:pathData="M55,85 L22,85 22,50 A3,3 -1 0,1 14,43 L42,15 Q50,6 58,15   L86,43 A3,3 -1 0,1 78,50 L78,85 70,85"
             android:strokeWidth="8"
             android:strokeColor="#AEBBC2" />
         <path
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
-            android:pathData="M38 60 Q50,72 63,60 "
+            android:pathData="M41 60 Q50,72 59,60"
             android:strokeWidth="8"
             android:strokeColor="#AEBBC2" />
     </group>
