@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="10dp"
+    android:height="10dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <group android:name="mine">
+        <!--   55度-->
+        <path
+            android:name="rect_1"
+            android:pathData="M33.616959,41.471528 A20,20 -1 0,1 61.471528,13.6169592"
+            android:strokeWidth="7"
+            android:strokeColor="#AEBBC2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:name="rect_1"
+            android:pathData="M50,10 A20,20 -1 0,1 50,50"
+            android:strokeWidth="7"
+            android:strokeColor="#AEBBC2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:name="rect_1"
+            android:pathData="M50,50 A40,40 -1 0,0 10,90"
+            android:strokeWidth="7"
+            android:strokeColor="#AEBBC2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <!--  60度-->
+        <path
+            android:name="rect_1"
+            android:pathData="M70,55.35884 A40,40 -1 0,1 90,90"
+            android:strokeWidth="7"
+            android:strokeColor="#AEBBC2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+    </group>
+</vector>
+

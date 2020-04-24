@@ -3,4 +3,9 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="svg_unselect">#AEBBC2</color>
+    <color name="color_home_select">#198CFE</color>
+    <color name="color_expense_record_select">#FF9D49</color>
+    <color name="color_application_select">#46C021</color>
+    <color name="color_mine_select">#34ADC8</color>
 </resources>

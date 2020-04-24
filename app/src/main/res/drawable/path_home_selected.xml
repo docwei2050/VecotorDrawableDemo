@@ -9,12 +9,29 @@
             android:viewportWidth="100"
             android:viewportHeight="100">
             <group android:name="house">
+                <group android:name="bubble_group">
+                    <path
+                        android:name="bubble"
+                        android:pathData="M70,75m-15,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0"
+                        android:fillAlpha="0" >
+                        <aapt:attr name="android:fillColor">
+                            <gradient
+                                android:startColor="#665FE5FF"
+                                android:endColor="#66198CFE"
+                                android:gradientRadius="18"
+                                android:centerX="62"
+                                android:centerY="67"
+                                android:type="radial">
+                            </gradient>
+                        </aapt:attr>
+                    </path>
+                </group>
                 <group android:name="rect_11">
                     <path
                         android:name="rect_11_path"
                         android:pathData="M60,85 L20,85 20,50 A5,5 -1 0,1 13,48 L42,15 Q50,6 58,15 L87,48 L87,48 L87,48 A5,5 -1 0,1 80,50 L80,85 70,85"
                         android:strokeWidth="6"
-                        android:strokeColor="#5198F4"
+                        android:strokeColor="#198CFE"
                         android:strokeLineCap="round"
                         android:strokeLineJoin="round" />
                 </group>
@@ -23,23 +40,16 @@
                         android:name="rect_12_path"
                         android:pathData="M38 60 Q50,72 63,60 "
                         android:strokeWidth="6"
-                        android:strokeColor="#5198F4"
+                        android:strokeColor="#198CFE"
                         android:strokeLineCap="round"
                         android:strokeLineJoin="round" />
                 </group>
-                <group android:name="rect_13">
-                    <path
-                        android:name="rect_13_path"
-                        android:fillColor="#aaBDDCFA"
-                        android:pathData="M68,73m-15,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0"
-                        android:strokeLineCap="round"
-                        android:strokeLineJoin="round" />
-                </group>
+
             </group>
         </vector>
     </aapt:attr>
 
-    <!-- 配上动画-->
+    <!-- 配上动画animator-->
     <target android:name="rect_11_path">
         <aapt:attr name="android:animation">
             <objectAnimator
@@ -63,26 +73,18 @@
                 android:valueType="floatType" />
         </aapt:attr>
     </target>
-    <target android:name="rect_13_path">
+    <target android:name="bubble">
         <aapt:attr name="android:animation">
-            <set android:ordering="sequentially">
-                <objectAnimator
-                    android:duration="1"
-                    android:propertyName="fillAlpha"
-                    android:valueFrom="1"
-                    android:valueTo="0"
-                    android:valueType="floatType" />
-                <objectAnimator
-                    android:duration="1"
-                    android:propertyName="fillAlpha"
-                    android:startOffset="250"
-                    android:valueFrom="0"
-                    android:valueTo="1"
-                    android:valueType="floatType" />
-            </set>
+            <objectAnimator
+                android:duration="1"
+                android:propertyName="fillAlpha"
+                android:startOffset="250"
+                android:valueFrom="0"
+                android:valueTo="1"
+                android:valueType="floatType" />
         </aapt:attr>
     </target>
-    <target android:name="rect_13">
+    <target android:name="bubble_group">
         <aapt:attr name="android:animation">
             <set>
                 <set android:ordering="sequentially">

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:width="10dp"
+            android:height="10dp"
+            android:viewportWidth="100"
+            android:viewportHeight="100">
+
+            <group android:name="record">
+                <group android:name="bubble_group">
+                    <!--小球轨迹（45,45）  （75,75） -->
+                    <path
+                        android:name="bubble"
+                        android:pathData="M75,75m-15,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0">
+                        <aapt:attr name="android:fillColor">
+                            <gradient
+                                android:centerX="39"
+                                android:centerY="39"
+                                android:endColor="#66FF9E66"
+                                android:gradientRadius="18"
+                                android:startColor="#66FFD062"
+                                android:type="radial" />
+                        </aapt:attr>
+                    </path>
+                </group>
+                <path
+                    android:name="rect_11_path"
+                    android:pathData="M25,15 20,15 Q16,16 15,20 L15,80 L15,80 Q16,84 20,85 L80,85 Q84,84 85,80 L85,20 Q84,16 80,15 L75,15"
+                    android:strokeWidth="7"
+                    android:strokeAlpha="0"
+                    android:strokeColor="#FF9D49"
+                    android:strokeLineCap="round"
+                    android:strokeLineJoin="round" />
+
+                <path
+                    android:name="rect_12_path"
+                    android:pathData="M35,15 L65,15"
+                    android:strokeWidth="7"
+                    android:strokeAlpha="0"
+                    android:strokeColor="#FF9D49"
+                    android:strokeLineCap="round"
+                    android:strokeLineJoin="round" />
+                <path
+                    android:name="rect_13_path"
+                    android:pathData="M30,35 L70,35"
+                    android:strokeWidth="7"
+                    android:strokeAlpha="0"
+                    android:strokeColor="#FF9D49"
+                    android:strokeLineCap="round"
+                    android:strokeLineJoin="round" />
+                <path
+                    android:name="rect_14_path"
+                    android:pathData="M30,53 L60,53"
+                    android:strokeWidth="7"
+                    android:strokeAlpha="0"
+                    android:strokeColor="#FF9D49"
+                    android:strokeLineCap="round"
+                    android:strokeLineJoin="round" />
+            </group>
+        </vector>
+    </aapt:attr>
+    <!-- 配上动画animator-->
+
+    <target android:name="rect_11_path">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="125"
+                android:propertyName="strokeAlpha"
+                android:valueFrom="0"
+                android:valueTo="1"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+    <target android:name="rect_12_path">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="125"
+                android:propertyName="strokeAlpha"
+                android:startOffset="125"
+                android:valueFrom="0"
+                android:valueTo="1"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+    <target android:name="rect_13_path">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="125"
+                android:propertyName="strokeAlpha"
+                android:startOffset="250"
+                android:valueFrom="0"
+                android:valueTo="1"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+    <target android:name="rect_14_path">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="125"
+                android:propertyName="strokeAlpha"
+                android:startOffset="375"
+                android:valueFrom="0"
+                android:valueTo="1"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+
+    <target android:name="bubble">
+        <aapt:attr name="android:animation">
+            <set android:ordering="sequentially">
+                <objectAnimator
+                    android:duration="1"
+                    android:propertyName="fillAlpha"
+                    android:startOffset="500"
+                    android:valueFrom="0"
+                    android:valueTo="1"
+                    android:valueType="floatType" />
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="bubble_group">
+        <aapt:attr name="android:animation">
+            <set>
+                <set android:ordering="sequentially">
+                    <objectAnimator
+                        android:duration="200"
+                        android:propertyName="translateY"
+                        android:startOffset="400"
+                        android:valueFrom="0"
+                        android:valueTo="-30"
+                        android:valueType="floatType" />
+                    <objectAnimator
+                        android:duration="200"
+                        android:propertyName="translateX"
+                        android:valueFrom="-30"
+                        android:valueTo="0"
+                        android:valueType="floatType" />
+                </set>
+                <set android:ordering="sequentially">
+                    <objectAnimator
+                        android:duration="200"
+                        android:propertyName="translateX"
+                        android:startOffset="400"
+                        android:valueFrom="0"
+                        android:valueTo="-30"
+                        android:valueType="floatType" />
+                    <objectAnimator
+                        android:duration="200"
+                        android:propertyName="translateY"
+                        android:valueFrom="-30"
+                        android:valueTo="0"
+                        android:valueType="floatType" />
+                </set>
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>
+
