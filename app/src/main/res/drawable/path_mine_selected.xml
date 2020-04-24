@@ -29,7 +29,7 @@
                 <!--   55度-->
                 <path
                     android:name="rect_11_path"
-                    android:pathData="M33.616959,41.471528 A20,20 -1 0,1 61.471528,13.6169592"
+                    android:pathData="M35.664839,42.537588 A17.5,17.5 -1 0,1 64.335161,22.12412"
                     android:strokeWidth="7"
                     android:strokeAlpha="0"
                     android:strokeColor="#34ADC8"
@@ -37,7 +37,7 @@
                     android:strokeLineJoin="round" />
                 <path
                     android:name="rect_12_path"
-                    android:pathData="M50,10 A20,20 -1 0,1 50,50"
+                    android:pathData="M50,15 A17.5,17.5 -1 0,1 50,50"
                     android:strokeWidth="7"
                     android:strokeAlpha="0"
                     android:strokeColor="#34ADC8"
@@ -45,7 +45,7 @@
                     android:strokeLineJoin="round" />
                 <path
                     android:name="rect_13_path"
-                    android:pathData="M50,50 A40,40 -1 0,0 10,90"
+                    android:pathData="M50,50 A35,35 -1 0,0 15,85"
                     android:strokeWidth="7"
                     android:strokeAlpha="0"
                     android:strokeColor="#34ADC8"
@@ -54,7 +54,7 @@
                 <!--  60度-->
                 <path
                     android:name="rect_14_path"
-                    android:pathData="M70,55.35884 A40,40 -1 0,1 90,90"
+                    android:pathData="M67.5,54.68911 A35,35 -1 0,1 85,85"
                     android:strokeWidth="7"
                     android:strokeAlpha="0"
                     android:strokeColor="#34ADC8"

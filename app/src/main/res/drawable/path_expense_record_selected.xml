@@ -27,7 +27,7 @@
                 </group>
                 <path
                     android:name="rect_11_path"
-                    android:pathData="M25,15 20,15 Q16,16 15,20 L15,80 L15,80 Q16,84 20,85 L80,85 Q84,84 85,80 L85,20 Q84,16 80,15 L75,15"
+                    android:pathData="M75,15 80,15 Q84,16 85,20 L85,80 Q84,84 80,85 L20,85 Q16,84 15,80 L15,20 Q16,16 20,15 L25,15"
                     android:strokeWidth="7"
                     android:strokeAlpha="0"
                     android:strokeColor="#FF9D49"

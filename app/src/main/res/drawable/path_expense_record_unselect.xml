@@ -7,29 +7,25 @@
 
     <group android:name="record">
         <path
-            android:name="rect_1"
-            android:pathData="M25,15 20,15 Q16,16 15,20 L15,80 L15,80 Q16,84 20,85 L80,85 Q84,84 85,80 L85,20 Q84,16 80,15 L75,15"
+              android:pathData="M75,15 80,15 Q84,16 85,20 L85,80 Q84,84 80,85 L20,85 Q16,84 15,80 L15,20 Q16,16 20,15 L25,15"
             android:strokeWidth="7"
             android:strokeColor="#AEBBC2"
             android:strokeLineCap="round"
             android:strokeLineJoin="round" />
-
         <path
-            android:name="rect_2"
             android:pathData="M35,15 L65,15"
             android:strokeWidth="7"
             android:strokeColor="#AEBBC2"
             android:strokeLineCap="round"
             android:strokeLineJoin="round" />
         <path
-            android:name="rect_3"
+
             android:pathData="M30,35 L70,35"
             android:strokeWidth="7"
             android:strokeColor="#AEBBC2"
             android:strokeLineCap="round"
             android:strokeLineJoin="round" />
         <path
-            android:name="rect_4"
             android:pathData="M30,53 L60,53"
             android:strokeWidth="7"
             android:strokeColor="#AEBBC2"
