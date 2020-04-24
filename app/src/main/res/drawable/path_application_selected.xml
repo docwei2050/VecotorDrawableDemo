@@ -11,7 +11,7 @@
                 <path
                     android:name="rect_11_path"
                     android:pathData="M46,70 L46,77 Q45,84 38,85 L23,85 Q16,86 15,77 L15,23 Q16,16 23,15 L25,15"
-                    android:strokeWidth="7"
+                    android:strokeWidth="8"
                     android:strokeAlpha="0"
                     android:strokeColor="#46C021"
                     android:strokeLineCap="round"
@@ -19,7 +19,7 @@
                 <path
                     android:name="rect_12_path"
                     android:pathData="M25,15 L38,15 Q45,16 46,23 L46,70"
-                    android:strokeWidth="7"
+                    android:strokeWidth="8"
                     android:strokeAlpha="0"
                     android:strokeColor="#46C021"
                     android:strokeLineCap="round"
@@ -27,7 +27,7 @@
                 <path
                     android:name="rect_13_path"
                     android:pathData="M60,23 Q61,16 68,15  L77,15 Q84,16 85,23 L85,35 Q84,44 77,43 L68,43 Q61,44 60,35z"
-                    android:strokeWidth="7"
+                    android:strokeWidth="8"
                     android:strokeAlpha="0"
                     android:strokeColor="#46C021"
                     android:strokeLineCap="round"

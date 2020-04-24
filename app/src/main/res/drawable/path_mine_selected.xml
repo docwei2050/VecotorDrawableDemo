@@ -30,7 +30,7 @@
                 <path
                     android:name="rect_11_path"
                     android:pathData="M35.664839,42.537588 A17.5,17.5 -1 0,1 64.335161,22.12412"
-                    android:strokeWidth="7"
+                    android:strokeWidth="8"
                     android:strokeAlpha="0"
                     android:strokeColor="#34ADC8"
                     android:strokeLineCap="round"
@@ -38,7 +38,7 @@
                 <path
                     android:name="rect_12_path"
                     android:pathData="M50,15 A17.5,17.5 -1 0,1 50,50"
-                    android:strokeWidth="7"
+                    android:strokeWidth="8"
                     android:strokeAlpha="0"
                     android:strokeColor="#34ADC8"
                     android:strokeLineCap="round"
@@ -46,7 +46,7 @@
                 <path
                     android:name="rect_13_path"
                     android:pathData="M50,50 A35,35 -1 0,0 15,85"
-                    android:strokeWidth="7"
+                    android:strokeWidth="8"
                     android:strokeAlpha="0"
                     android:strokeColor="#34ADC8"
                     android:strokeLineCap="round"
@@ -55,7 +55,7 @@
                 <path
                     android:name="rect_14_path"
                     android:pathData="M67.5,54.68911 A35,35 -1 0,1 85,85"
-                    android:strokeWidth="7"
+                    android:strokeWidth="8"
                     android:strokeAlpha="0"
                     android:strokeColor="#34ADC8"
                     android:strokeLineCap="round"

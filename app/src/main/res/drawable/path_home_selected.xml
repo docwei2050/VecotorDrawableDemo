@@ -30,7 +30,7 @@
                     <path
                         android:name="rect_11_path"
                         android:pathData="M60,85 L20,85 20,50 A5,5 -1 0,1 13,48 L42,15 Q50,6 58,15 L87,48 L87,48 L87,48 A5,5 -1 0,1 80,50 L80,85 70,85"
-                        android:strokeWidth="6"
+                        android:strokeWidth="8"
                         android:strokeColor="#198CFE"
                         android:strokeLineCap="round"
                         android:strokeLineJoin="round" />
@@ -39,7 +39,7 @@
                     <path
                         android:name="rect_12_path"
                         android:pathData="M38 60 Q50,72 63,60 "
-                        android:strokeWidth="6"
+                        android:strokeWidth="8"
                         android:strokeColor="#198CFE"
                         android:strokeLineCap="round"
                         android:strokeLineJoin="round" />

@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         mImageView3 = (ImageView) findViewById(R.id.imageView3);
         mImageView4 = (ImageView) findViewById(R.id.imageView4);
 
+        mImageView1.setImageResource(R.drawable.selector_tab_home);
+
 
         mImageView1.setOnClickListener(new View.OnClickListener() {
             @Override
