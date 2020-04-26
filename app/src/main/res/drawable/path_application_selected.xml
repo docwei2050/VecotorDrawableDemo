@@ -8,9 +8,10 @@
             android:viewportWidth="100"
             android:viewportHeight="100">
             <group android:name="application">
+
                 <path
                     android:name="rect_11_path"
-                    android:pathData="M46,70 L46,23 Q45,16 38,15 L25,15"
+                    android:pathData="M46,70 L46,77 Q45,84 38,85 L23,85 Q16,84 15,77 L15,23 Q16,16 23,15 L25,15"
                     android:strokeWidth="8"
                     android:strokeAlpha="0"
                     android:strokeColor="#46C021"
@@ -18,7 +19,7 @@
                     android:strokeLineJoin="round" />
                 <path
                     android:name="rect_12_path"
-                    android:pathData="M25,15 L23,15 Q16,16 15,23 L15,77 Q16,84 23,85 L38,85 Q45,84 46,77 L46,70"
+                    android:pathData="M25,15 L38,15 Q45,16 46,23 L46,70"
                     android:strokeWidth="8"
                     android:strokeAlpha="0"
                     android:strokeColor="#46C021"
@@ -72,7 +73,7 @@
                     android:valueTo="1"
                     android:valueType="floatType" />
                 <objectAnimator
-                    android:duration="500"
+                    android:duration="325"
                     android:interpolator="@android:interpolator/accelerate_decelerate"
                     android:propertyName="trimPathEnd"
                     android:valueFrom="0"
@@ -86,13 +87,13 @@
             <set android:ordering="sequentially">
                 <objectAnimator
                     android:duration="1"
+                    android:startOffset="326"
                     android:propertyName="strokeAlpha"
                     android:valueFrom="0"
                     android:valueTo="1"
                     android:valueType="floatType" />
                 <objectAnimator
                     android:duration="125"
-                    android:startOffset="125"
                     android:interpolator="@android:interpolator/accelerate_decelerate"
                     android:propertyName="trimPathEnd"
                     android:valueFrom="0"
