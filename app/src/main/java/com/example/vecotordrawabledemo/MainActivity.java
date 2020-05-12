@@ -23,19 +23,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mImageView1 = (ImageView) findViewById(R.id.imageView);
-        mImageView2 = (ImageView) findViewById(R.id.imageView2);
-        mImageView3 = (ImageView) findViewById(R.id.imageView3);
+      //  mImageView2 = (ImageView) findViewById(R.id.imageView2);
+       /* mImageView3 = (ImageView) findViewById(R.id.imageView3);
         mImageView4 = (ImageView) findViewById(R.id.imageView4);
-
-        mImageView1.setImageResource(R.drawable.selector_tab_home);
+*/
+        mImageView1.setImageResource(R.drawable.path_home_selected);
 
 
         mImageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mImageView1.setSelected(true);
-                StateListDrawable drawable = (StateListDrawable) mImageView1.getDrawable();
-                Drawable current =drawable.getCurrent();
+                //mImageView1.setSelected(true);
+                //StateListDrawable drawable = (StateListDrawable) mImageView1.getDrawable();
+                Drawable current =mImageView1.getDrawable();
                 if (current instanceof Animatable) {
                     Animatable animatable = (Animatable) current;
                    animatable.start();
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mImageView2.setOnClickListener(new View.OnClickListener() {
+  /*      mImageView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mImageView2.setSelected(true);
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
+*/
 
     }
 

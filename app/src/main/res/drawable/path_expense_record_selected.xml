@@ -88,13 +88,13 @@
             <set android:ordering="sequentially">
                 <objectAnimator
                     android:duration="1"
+                    android:startOffset="125"
                     android:propertyName="strokeAlpha"
                     android:valueFrom="0"
                     android:valueTo="1"
                     android:valueType="floatType" />
                 <objectAnimator
                     android:duration="125"
-                    android:startOffset="125"
                     android:interpolator="@android:interpolator/accelerate_decelerate"
                     android:propertyName="trimPathEnd"
                     android:valueFrom="0"
@@ -110,11 +110,11 @@
                     android:duration="1"
                     android:propertyName="strokeAlpha"
                     android:valueFrom="0"
+                    android:startOffset="251"
                     android:valueTo="1"
                     android:valueType="floatType" />
                 <objectAnimator
                     android:duration="125"
-                    android:startOffset="250"
                     android:interpolator="@android:interpolator/accelerate_decelerate"
                     android:propertyName="trimPathEnd"
                     android:valueFrom="0"
@@ -130,11 +130,11 @@
                     android:duration="1"
                     android:propertyName="strokeAlpha"
                     android:valueFrom="0"
+                    android:startOffset="376"
                     android:valueTo="1"
                     android:valueType="floatType" />
                 <objectAnimator
                     android:duration="125"
-                    android:startOffset="375"
                     android:interpolator="@android:interpolator/accelerate_decelerate"
                     android:propertyName="trimPathEnd"
                     android:valueFrom="0"
@@ -164,7 +164,7 @@
                     <objectAnimator
                         android:duration="200"
                         android:propertyName="translateY"
-                        android:startOffset="400"
+                        android:startOffset="503"
                         android:valueFrom="0"
                         android:valueTo="-30"
                         android:valueType="floatType" />
@@ -179,7 +179,7 @@
                     <objectAnimator
                         android:duration="200"
                         android:propertyName="translateX"
-                        android:startOffset="400"
+                        android:startOffset="503"
                         android:valueFrom="0"
                         android:valueTo="-30"
                         android:valueType="floatType" />

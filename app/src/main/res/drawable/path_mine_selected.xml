@@ -76,7 +76,7 @@
                     android:valueTo="1"
                     android:valueType="floatType" />
                 <objectAnimator
-                    android:duration="125"
+                    android:duration="150"
                     android:interpolator="@android:interpolator/accelerate_decelerate"
                     android:propertyName="trimPathEnd"
                     android:valueFrom="0"
@@ -90,15 +90,15 @@
             <set android:ordering="sequentially">
                 <objectAnimator
                     android:duration="1"
+                    android:startOffset="151"
                     android:propertyName="strokeAlpha"
                     android:valueFrom="0"
                     android:valueTo="1"
                     android:valueType="floatType" />
                 <objectAnimator
-                    android:duration="125"
+                    android:duration="150"
                     android:interpolator="@android:interpolator/accelerate_decelerate"
                     android:propertyName="trimPathEnd"
-                    android:startOffset="125"
                     android:valueFrom="0"
                     android:valueTo="1"
                     android:valueType="floatType" />
@@ -112,13 +112,13 @@
                     android:duration="1"
                     android:propertyName="strokeAlpha"
                     android:valueFrom="0"
+                    android:startOffset="302"
                     android:valueTo="1"
                     android:valueType="floatType" />
                 <objectAnimator
-                    android:duration="125"
+                    android:duration="200"
                     android:interpolator="@android:interpolator/accelerate_decelerate"
                     android:propertyName="trimPathEnd"
-                    android:startOffset="250"
                     android:valueFrom="0"
                     android:valueTo="1"
                     android:valueType="floatType" />
@@ -133,12 +133,12 @@
                     android:propertyName="strokeAlpha"
                     android:valueFrom="0"
                     android:valueTo="1"
+                    android:startOffset="503"
                     android:valueType="floatType" />
                 <objectAnimator
-                    android:duration="125"
+                    android:duration="150"
                     android:interpolator="@android:interpolator/accelerate_decelerate"
                     android:propertyName="trimPathEnd"
-                    android:startOffset="375"
                     android:valueFrom="0"
                     android:valueTo="1"
                     android:valueType="floatType" />
@@ -152,7 +152,7 @@
                 <objectAnimator
                     android:duration="1"
                     android:propertyName="fillAlpha"
-                    android:startOffset="500"
+                    android:startOffset="650"
                     android:valueFrom="0"
                     android:valueTo="1"
                     android:valueType="floatType" />
@@ -167,7 +167,7 @@
                     <objectAnimator
                         android:duration="250"
                         android:propertyName="translateY"
-                        android:startOffset="400"
+                        android:startOffset="651"
                         android:valueFrom="0"
                         android:valueTo="-15"
                         android:valueType="floatType" />
@@ -182,7 +182,7 @@
                     <objectAnimator
                         android:duration="250"
                         android:propertyName="translateX"
-                        android:startOffset="400"
+                        android:startOffset="651"
                         android:valueFrom="0"
                         android:valueTo="-15"
                         android:valueType="floatType" />

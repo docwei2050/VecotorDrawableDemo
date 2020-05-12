@@ -40,6 +40,7 @@
                         android:name="rect_12_path"
                         android:pathData="M41 60 Q50,72 59,60"
                         android:strokeWidth="8"
+                        android:strokeAlpha="0"
                         android:strokeColor="#198CFE"
                         android:strokeLineCap="round"
                         android:strokeLineJoin="round" />
@@ -63,14 +64,22 @@
     </target>
     <target android:name="rect_12_path">
         <aapt:attr name="android:animation">
-            <objectAnimator
-                android:duration="100"
-                android:interpolator="@android:interpolator/linear"
-                android:propertyName="trimPathEnd"
-                android:startOffset="200"
-                android:valueFrom="0"
-                android:valueTo="1"
-                android:valueType="floatType" />
+            <set android:ordering="sequentially">
+                <objectAnimator
+                    android:duration="1"
+                    android:propertyName="strokeAlpha"
+                    android:valueFrom="0"
+                    android:startOffset="302"
+                    android:valueTo="1"
+                    android:valueType="floatType" />
+                <objectAnimator
+                    android:duration="100"
+                    android:interpolator="@android:interpolator/linear"
+                    android:propertyName="trimPathEnd"
+                    android:valueFrom="0"
+                    android:valueTo="1"
+                    android:valueType="floatType" />
+            </set>
         </aapt:attr>
     </target>
     <target android:name="bubble">
@@ -78,7 +87,7 @@
             <objectAnimator
                 android:duration="1"
                 android:propertyName="fillAlpha"
-                android:startOffset="400"
+                android:startOffset="500"
                 android:valueFrom="0"
                 android:valueTo="1"
                 android:valueType="floatType" />
@@ -91,7 +100,7 @@
                     <objectAnimator
                         android:duration="200"
                         android:propertyName="translateY"
-                        android:startOffset="400"
+                        android:startOffset="500"
                         android:valueFrom="0"
                         android:valueTo="-20"
                         android:valueType="floatType" />
@@ -106,7 +115,7 @@
                     <objectAnimator
                         android:duration="200"
                         android:propertyName="translateX"
-                        android:startOffset="400"
+                        android:startOffset="500"
                         android:valueFrom="0"
                         android:valueTo="-18"
                         android:valueType="floatType" />
